@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hide {
+    display: none;
+    transition: transform 4s;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+p {
+    color: brown;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.open-close-icon {
+    background-image: url(./img/plus.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.content-block {
+    border-top: 2px solid brown;
+}
+
+.container .content-block .image{
+    margin: 0 auto;
+    width: 520px;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.container .content-block:nth-child(2) .image{
+    background-image: url(./img/1.JPG);
+}
+
+.container .content-block:nth-child(3) .image{
+    background-image: url(./img/2.JPG);
+}
+
+.container .content-block:nth-child(4) .image{
+    background-image: url(./img/3.JPG);
+}
+
+.container .content-block:nth-child(5) .image{
+    background-image: url(./img/4.JPG);
+}
+
+.show {
+    display: none;
+    transition-property: opacity;
+    transition-duration: 2s;
+}
